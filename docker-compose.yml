@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  apache-baseline:
+    image: exjobb-baseline
+    ports:
+      - "8080:80"
+  apache-gzip:
+    image: exjobb-gzip
+    ports:
+      - "8081:80"
+  apache-minify:
+    image: exjobb-minify
+    ports:
+      - "8082:80"
+  apache-bundling:
+    image: exjobb-bundling
+    ports:
+      - "8083:80"
+  apache-tree_shaking:
+    image: exjobb-tree_shaking
+    ports:
+      - "8084:80"
+  apache-code_splitting:
+    image: exjobb-code_splitting
+    ports:
+      - "8085:80"
+  apache-all:
+    image: exjobb-all
+    ports:
+      - "8086:80"
