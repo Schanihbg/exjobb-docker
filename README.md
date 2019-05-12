@@ -1,8 +1,25 @@
 # exjobb-docker
 
+## Requirements
+* Docker
+
+#### Docker desktop for Windows
+Allow execution of unsigned PowerShell scripts.
+
+Run as PowerShell as administrator then enter
+```
+Set-ExecutionPolicy Remotesigned
+```
+
 ## Build docker images
+Mac OS / Linux
 ```
 sh docker-build-images.sh
+```
+
+Windows
+```
+./docker-build-images.ps1
 ```
 
 ## Start all containers
@@ -22,8 +39,14 @@ docker-compose up
 | all            | 8086 |
 
 ## Run Lighthouse tests
+Mac OS / Linux
 ```
 sh lighthouse-tests.sh
+```
+
+Windows
+```
+./lighthouse-tests.ps1
 ```
 
 ## Lighthouse reports
